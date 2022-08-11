@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SimplexRepeater</string>
+    <string name="simplex_title">Simplex Repeater</string>
+    <string name="record_audio">Recording audio…</string>
+    <string name="noise_template">NOISE: %1$s / %2$s</string>
+    <string name="playback">Playing recorded audio…</string>
+    <string name="playback_template">Playing recorded audio in %1$s…</string>
+    <string name="voice_input_level">Voice input level: %1$s</string>
+    <string name="voice_cutoff_level">Voice cutoff level: %1$s</string>
+    <string name="voice_cutoff_delay_ms">Voice cutoff delay (ms): %1$s</string>
+    <string name="playback_delay_ms">Playback delay (ms): %1$s</string>
+    <string name="save">Ment</string>
+</resources>

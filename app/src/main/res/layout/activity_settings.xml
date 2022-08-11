@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.riczz.SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/voiceInputLevelTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/voice_input_level"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/voiceInputLevel"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:max="32700"
+            tools:layout_editor_absoluteX="180dp"
+            tools:layout_editor_absoluteY="111dp" />
+
+        <TextView
+            android:id="@+id/voiceCutoffLevelTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/voice_cutoff_level"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/voiceCutoffLevel"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:max="10000"
+            tools:layout_editor_absoluteX="180dp"
+            tools:layout_editor_absoluteY="111dp" />
+
+        <TextView
+            android:id="@+id/voiceCutoffDelayMsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/voice_cutoff_delay_ms"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/voiceCutoffDelay"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:max="5000"
+            tools:layout_editor_absoluteX="180dp"
+            tools:layout_editor_absoluteY="111dp" />
+
+        <TextView
+            android:id="@+id/playbackDelayMsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/playback_delay_ms"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/playbackDelayMs"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:max="10000"
+            tools:layout_editor_absoluteX="180dp"
+            tools:layout_editor_absoluteY="111dp" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="48dp"
+            android:onClick="updateConfig"
+            android:text="@string/save" />
+    </LinearLayout>
+</ScrollView>
